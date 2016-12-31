@@ -1,0 +1,66 @@
+{include file="./header.html"}
+<div class="main pubw">
+{include file="./sidebar.html"}
+<div class="right">
+	{include file="./nav.html"}
+	
+	<div class="content">
+	<form method="post" action="{$postcateaddurl}">
+  <table>
+  <tr><th colspan='5'>分类目录添加</th></tr>
+  <tr>
+    <td>名称：</td>
+    <td><input name="name" /></td>
+    <td>父级：</td>
+    <td><select id="pid" name="pid" style="width:100%;">
+    <option value="0" selected="selected">顶级</option>
+	{foreach from="$postcateinfo" item="postcate"}
+	<option value="{$postcate.0}">{$postcate.1}</option>
+	{/foreach}
+</select></td>
+  	<td><input type="submit" name="submit" id="submit" class="button button-primary" value="添加" /></td>
+  </tr>
+  </table></form>
+  
+  <form method="post" action="{$postcatemodifyturl}" id="postcatemodify">
+  <table>
+  <tr><th colspan='5' style="background:#e5f2f7; color:#4d4d4d; border:1px solid #cccccc;">分类目录修改</th></tr>
+  <tr>
+    <td>名称：</td>
+    <td><input id="namemodify" name="name" value='' /></td>
+    <td>父级：</td>
+    <td><select id="pid" name="pid" style="width:100%;">
+    <option value="no" selected="selected">不修改父级</option>
+    <option value="0">顶级</option>
+	{foreach from="$postcateinfo" item="postcate"}
+	<option value="{$postcate.0}">{$postcate.1}</option>
+	{/foreach}
+</select></td>
+  	<td><input style="background:#e5f2f7; color:#4d4d4d; border:1px solid #cccccc;" type="button" id="postcateModifySubmit" class="button button-primary" value="修改" /></td>
+  </tr>
+  <input type="hidden" id="cidmodify" name='cid' value="0" />
+  </table></form>
+  
+  <form method="post" action="{$postcatesorturl}">
+  <table class="postcenter">
+  <tr><th>分类ID</th><th>分类名</th><th>父级分类</th><th>排序</th><th>编辑</th><th>删除</th></tr>
+  {foreach from="$postcateinfo" item="postcate"}
+  <tr>
+ <td>{$postcate.0}</td>
+ <td style="text-align:left;">{$postcate.1}</td>
+ <td>{if $postcate.2==0}TOP{else}{$postcate.2}{/if}</td>
+ <td><input type="text" size="2" value="{$postcate.4}" name="sort[{$postcate.0}]" /></td>
+ <td><a class="postcatemodify" cid="{$postcate.0}" cname="{$postcate.3}" title="修改'{$postcate.3}'"><img src="/images/admin/edit.gif" /></a></td>
+ <td><a href="{$postcatedeleteurl}?cid={$postcate.0}" title="删除'{$postcate.3}'"><img src="/images/admin/delete.gif" /></a></td>
+  </tr>
+  {/foreach}
+  </table>
+  <input type="submit" value="更新排序" class="button button-primary" id="submit" name="submit">
+  </form>
+	</div>
+</div>
+<div class="clear"></div>
+</div>
+
+</body>
+{include file="./footer.html"}

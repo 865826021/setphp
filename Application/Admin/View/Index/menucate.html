@@ -1,0 +1,47 @@
+{include file="./header.html"}
+<div class="main pubw">
+{include file="./sidebar.html"}
+<div class="right">
+	{include file="./nav.html"}
+	
+	<div class="content">
+	<form method="post" action="{$menucateaddurl}">
+  <table>
+  <tr><th colspan='5'>菜单分类添加</th></tr>
+  <tr>
+    <td>名称：</td>
+    <td><input name="name" /></td>
+  	<td><input type="submit" name="submit" id="submit" class="button button-primary" value="添加" /></td>
+  </tr>
+  </table></form>
+  
+  <form method="post" action="{$menucatemodifyurl}" id="postcatemodify">
+  <table>
+  <tr><th colspan='5' style="background:#e5f2f7; color:#4d4d4d; border:1px solid #cccccc;">菜单分类名称修改</th></tr>
+  <tr>
+    <td>名称：</td>
+    <td><input id="namemodify" name="name" value='' /></td>
+  	<td><input style="background:#e5f2f7; color:#4d4d4d; border:1px solid #cccccc;" type="button" id="postcateModifySubmit" class="button button-primary" value="修改" /></td>
+  </tr>
+  <input type="hidden" id="cidmodify" name='cid' value="0" />
+  </table></form>
+  
+
+  <table class="postcenter">
+  <tr><th>分类ID</th><th>分类名</th><th>编辑</th><th>删除</th></tr>
+  {foreach from="$menucate" item="cate"}
+  <tr>
+ <td>{$cate.id}</td>
+ <td style="text-align:left;">{$cate.name}</td>
+ <td><a class="postcatemodify" cid="{$cate.id}" cname="{$cate.name}" title="修改'{$cate.name}'"><img src="/images/admin/edit.gif" /></a></td>
+ <td><a href="{$menucatedeleteurl}?cid={$cate.id}" title="删除'{$cate.name}'"><img src="/images/admin/delete.gif" /></a></td>
+  </tr>
+  {/foreach}
+  </table>
+	</div>
+</div>
+<div class="clear"></div>
+</div>
+
+</body>
+{include file="./footer.html"}

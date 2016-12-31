@@ -1,0 +1,63 @@
+create table set_options(
+id int unsigned not null unique primary key auto_increment,
+name varchar(32) default '' not null,
+val varchar(256) default '' not null
+);
+
+insert into set_options values (null,'webtitle','title'),(null,'companyname','name'),(null,'siteurl',''),(null,'keywords','keywords'),(null,'description','des'),(null,'admin_email',''),(null,'language',1);
+
+create table set_postcate(
+id int unsigned not null unique primary key auto_increment,
+name varchar(32) not null default '',
+pid int unsigned not null default 0,
+sort int unsigned not null default 0
+);
+
+create table set_posts(
+id int unsigned not null unique primary key auto_increment,
+pid int unsigned not null default 1,
+title text not null default '',
+content longtext not null default '',
+thumbnail varchar(128) not null default '',
+description varchar(521) not null default '',
+url2 varchar(256) not null default '#',
+author int not null default 1,
+time varchar(16) not null default 0,
+ctime varchar(16) not null default 0,
+empty tinyint(1) not null default 0
+);
+
+create table set_menucate(
+id int unsigned not null unique primary key auto_increment,
+name varchar(64) not null default ''
+);
+
+create table set_menu(
+id int unsigned not null unique primary key auto_increment,
+cid int unsigned not null default 1,
+name varchar(64) not null default '',
+url varchar(128) not null default '',
+sort int unsigned not null default 0
+);
+
+create table set_users(
+id int unsigned not null unique primary key auto_increment,
+username varchar(64) not null default '',
+password varchar(64) not null default '',
+name varchar(64) not null default '',
+phone varchar(32) not null default '',
+email varchar(64) not null default '',
+register_time int not null default 0,
+login_time int not null default 0
+);
+
+create table set_users(
+id int unsigned not null unique primary key auto_increment,
+phone varchar(32) unique not null default '',
+password varchar(64) not null default '',
+name varchar(64) not null default '',
+email varchar(64) not null default '',
+login_ip varchar(32) not null default '',
+register_time int not null default 0,
+login_time int not null default 0
+);

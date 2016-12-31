@@ -1,0 +1,12 @@
+[ 2015-11-19T18:33:26+08:00 ] 127.0.0.1 /lee1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+ERR: 无法加载模块:Lee1
+
+[ 2015-11-19T18:33:41+08:00 ] 127.0.0.1 /lee1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+ERR: 无法加载模块:Lee1
+

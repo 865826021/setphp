@@ -1,0 +1,9 @@
+<div class="nav">
+	<ul>
+	<li><a href="{$dashboardurl}">Dashboard</a></li>
+	<li>&gt;&nbsp;<a href="javascript:void(0)">{if $controllerName}{$controllerName}{else}undefined{/if}</a></li>
+	{if $postcatenow}{*文章->所有文章->特定分类nav*}
+	<li>&gt;&nbsp;<a title="分类ID:{$postcatenow.id}" href="{$postallurl}?pid={$postcatenow.id}">{$postcatenow.name}</a></li>
+	{/if}
+	</ul>
+	</div>

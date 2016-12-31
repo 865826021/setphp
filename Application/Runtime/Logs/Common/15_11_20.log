@@ -1,0 +1,36 @@
+[ 2015-11-20T13:07:44+08:00 ] 127.0.0.1 /b?c1=8&c2=6035308&rn=0.9803126273162639&c7=http%3A%2F%2Fbbs.csdn.net%2Ftopics%2F220026049&c3=&c4=&c5=&c6=&c10=&c15=&c16=&c8=&c9=&cv=1.8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+ERR: 无法加载模块:B
+
+[ 2015-11-20T14:09:37+08:00 ] 127.0.0.1 /b?c1=8&c2=6035308&rn=0.816924263470084&c7=http%3A%2F%2Fdetail.zol.com.cn%2Fcell_phone%2Findex397494.shtml&c3=&c4=&c5=&c6=&c10=&c15=&c16=&c8=&c9=&cv=1.8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+ERR: 无法加载模块:B
+
+[ 2015-11-20T15:18:20+08:00 ] 127.0.0.1 /html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+ERR: 无法加载模块:Html
+
+[ 2015-11-20T15:18:30+08:00 ] 127.0.0.1 /html/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+ERR: 无法加载模块:Html
+
+[ 2015-11-20T17:25:41+08:00 ] 127.0.0.1 /irt?_iwt_id=hxKptK5FSVZMjSgKR1UU-AA&_iwt_UA=UA-youku-000001&jsonp=MTIH7GOO381VK68Z&_iwt_p1=&_iwt_p2=&_iwt_p3=&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027353s ]
+ERR: 无法加载模块:Irt
+
+[ 2015-11-20T17:25:41+08:00 ] 127.0.0.1 /irt?_iwt_id=hxKptK5FSVZMjSgKR1UU-AA&_iwt_UA=UA-youku-100009&jsonp=SetIDA1&_iwt_p1=A-1-0&_iwt_p2=XNjQzMTUzNzI0&_iwt_p3=741-0-0-0&_iwt_p4=%E5%91%BC%E5%90%B8%E4%B9%8B%E7%97%9B---%E7%A9%BA%E9%BC%BB%E7%97%87&_iwt_p5=http://v.youku.com/v_show/id_XNjQzMTUzNzI0.html&_iwt_muid=1447392964565bLF&r=5626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+ERR: 无法加载模块:Irt
+

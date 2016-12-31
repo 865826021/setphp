@@ -1,0 +1,150 @@
+[ 2015-12-04T10:08:13+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: navSelectNo D:\WWW\setphp\Application\Runtime\Cache\3cc56294fa921d59d313d7e4a05194cfbe1f4251.file.header.html.php 第 38 行.
+NOTIC: [8] Trying to get property of non-object D:\WWW\setphp\Application\Runtime\Cache\3cc56294fa921d59d313d7e4a05194cfbe1f4251.file.header.html.php 第 38 行.
+NOTIC: [8] Undefined index: postcatenow D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2015-12-04T10:08:38+08:00 ] 127.0.0.1 /Admin/Index/set
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `set_options` [ RunTime:0.1045s ]
+SQL: SELECT * FROM `set_options`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: postcatenow D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2015-12-04T10:08:41+08:00 ] 127.0.0.1 /Admin/Index/postall
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `set_postcate` [ RunTime:0.0721s ]
+SQL: SHOW COLUMNS FROM `set_posts` [ RunTime:0.0662s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `set_posts` WHERE `empty` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `set_posts` WHERE `empty` = 0 ORDER BY id desc LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `set_postcate` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `set_postcate` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `set_postcate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `set_postcate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `set_postcate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `set_postcate` ORDER BY sort asc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: postcatenow D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+NOTIC: [8] Undefined index: postcatenow D:\WWW\setphp\Application\Runtime\Cache\22531f2ee997d35d5028b4cbad2a6f7440e4f831.file.postall.html.php 第 50 行.
+NOTIC: [8] Trying to get property of non-object D:\WWW\setphp\Application\Runtime\Cache\22531f2ee997d35d5028b4cbad2a6f7440e4f831.file.postall.html.php 第 50 行.
+NOTIC: [8] Undefined index: pid D:\WWW\setphp\Application\Runtime\Cache\22531f2ee997d35d5028b4cbad2a6f7440e4f831.file.postall.html.php 第 101 行.
+NOTIC: [8] Undefined index: pid D:\WWW\setphp\Application\Runtime\Cache\22531f2ee997d35d5028b4cbad2a6f7440e4f831.file.postall.html.php 第 101 行.
+NOTIC: [8] Undefined index: pid D:\WWW\setphp\Application\Runtime\Cache\22531f2ee997d35d5028b4cbad2a6f7440e4f831.file.postall.html.php 第 101 行.
+NOTIC: [8] Undefined index: pid D:\WWW\setphp\Application\Runtime\Cache\22531f2ee997d35d5028b4cbad2a6f7440e4f831.file.postall.html.php 第 101 行.
+NOTIC: [8] Undefined index: pid D:\WWW\setphp\Application\Runtime\Cache\22531f2ee997d35d5028b4cbad2a6f7440e4f831.file.postall.html.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2015-12-04T10:08:44+08:00 ] 127.0.0.1 /Admin/Index/postmodify?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `set_postcate` [ RunTime:0.0473s ]
+SQL: SELECT * FROM `set_postcate` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `set_posts` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `set_posts` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `set_postcate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2015-12-04T10:12:11+08:00 ] 127.0.0.1 /Admin/Index/menuli
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `set_menucate` [ RunTime:0.0815s ]
+SQL: SHOW COLUMNS FROM `set_menu` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `set_menucate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `set_menucate` ORDER BY id desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `set_menu` WHERE `cid` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `set_menucate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `set_menucate` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: postcatenow D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+NOTIC: [8] Undefined index: cid D:\WWW\setphp\Application\Runtime\Cache\e53e96ad1d8f36becd4cea4f940caa679cc894b9.file.menuli.html.php 第 95 行.
+NOTIC: [8] Undefined index: cid D:\WWW\setphp\Application\Runtime\Cache\e53e96ad1d8f36becd4cea4f940caa679cc894b9.file.menuli.html.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2015-12-04T10:12:16+08:00 ] 127.0.0.1 /Admin/Index/userli
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `set_users` [ RunTime:0.0925s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `set_users` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `set_users` ORDER BY id desc LIMIT 0,5   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: postcatenow D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+NOTIC: [8] Trying to get property of non-object D:\WWW\setphp\Application\Runtime\Cache\f2bc43727fefbd094e1883db5c040cc79808e622.file.nav.html.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001443s ]
+

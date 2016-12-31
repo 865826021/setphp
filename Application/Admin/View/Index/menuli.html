@@ -1,0 +1,72 @@
+{include file="./header.html"}
+<div class="main pubw">
+{include file="./sidebar.html"}
+<div class="right">
+	{include file="./nav.html"}
+	
+	<div class="content">
+	<form method="get" action="{$menuliurl}">
+	<table align="center">
+  <tr><th colspan='3'>菜单分类</th></tr>
+  <tr>
+    <td>分类：</td>
+    <td><select name="cid">
+    {if $menucatenow}
+    <option selected="selected" value="{$menucatenow.id}">当前位置：{$menucatenow.name}</option>
+    {/if}
+{foreach from="$menucateinfo" item="menucate"}
+	<option value="{$menucate.id}">{$menucate.name}</option>
+{/foreach}
+</select></td>
+    <td><input type="submit" value="查询"></td>
+  </tr>
+</table></form>
+  
+  <form method="post" action="{$menulimodifyurl}" id="menulimodify">
+  <table>
+  <tr><th colspan='5' style="background:#e5f2f7; color:#4d4d4d; border:1px solid #cccccc;">菜单信息修改</th></tr>
+  <tr>
+    <td>名称：</td>
+    <td><input id="namemodify" name="name" value='' /></td>
+    <td>所属分类：</td>
+    <td><select id="cid" name="cid" style="width:100%;">
+    <option value="no" selected="selected">不修改所属分类</option>
+{foreach from="$menucateinfo" item="menucate"}
+	<option value="{$menucate.id}">{$menucate.name}</option>
+{/foreach}
+</select></td>
+  	<td></td>
+  </tr>
+  <tr><td>超链接：</td>
+  <td colspan="3"><input type="text" id="urlmodify" name="urlmodify" size="60" value="" /></td>
+  <td><input style="background:#e5f2f7; color:#4d4d4d; border:1px solid #cccccc;" type="button" id="menuliModifySubmit" class="button button-primary" value="修改" /></td>
+  </tr>
+  <input type="hidden" id="idmodify" name='id' value="0" />
+  <input type="hidden" name='getcid' value="{if $smarty.get.cid}{$smarty.get.cid}{else}1{/if}" />
+  </table></form>
+  
+  <form method="post" action="{$menulisorturl}">
+  <table class="postcenter">
+  <tr><th>菜单ID</th><th>菜单名</th><th>所属分类</th><th>超链接</th><th>排序</th><th>编辑</th><th>删除</th></tr>
+  {foreach from="$menuli" item="menu"}
+  <tr>
+ <td>{$menu.id}</td>
+ <td>{$menu.name}</td>
+ <td style="text-align:left;">{$menu.pinfo.name}</td>
+ <td>{$menu.url}</td>
+ <td><input type="text" size="2" value="{$menu.sort}" name="sort[{$menu.id}]" /></td>
+ <td><a class="menulimodify" id="{$menu.id}" name="{$menu.name}" url="{$menu.url}" title="修改'{$menu.name}'"><img src="/images/admin/edit.gif" /></a></td>
+ <td><a href="{$menulideleteurl}?id={$menu.id}" title="删除'{$menu.name}'"><img src="/images/admin/delete.gif" /></a></td>
+  </tr>
+  {/foreach}
+  </table>
+  <input type="hidden" value="{if $smarty.get.cid}{$smarty.get.cid}{else}1{/if}" name="cid" />
+  <input type="submit" value="更新排序" class="button button-primary" id="submit" name="submit">
+  </form>
+	</div>
+</div>
+<div class="clear"></div>
+</div>
+
+</body>
+{include file="./footer.html"}

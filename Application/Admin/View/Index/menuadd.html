@@ -1,0 +1,45 @@
+{include file="./header.html"}
+<div class="main pubw">
+{include file="./sidebar.html"}
+<div class="right">
+	{include file="./nav.html"}
+	
+	<div class="content">
+	<form method="post" id="menuadd">
+	<div title="文章列表" data-icon="&#x4a;" aria-hidden="true" class="fonts3 huishou"><a href="{$menulinowurl}">查看菜单列表</a></div>
+  <table>
+  <tr><th colspan='2'>添加菜单</th></tr>
+  <tr>
+    <td>名称：</td>
+    <td><input type="text" name="name" id="name" size="33" /></td>
+  </tr>
+  <tr>
+    <td>分类：</td>
+    <td><select name="cid">
+	{foreach from="$menucateinfo" item="menucate"}
+	{if $menucatenow.id==$menucate.id}
+	<option value="{$menucate.id}" selected="selected">{$menucate.name}</option>
+	{else}
+	<option value="{$menucate.id}">{$menucate.name}</option>
+	{/if}
+	{/foreach}
+</select></td>
+  </tr>
+  <tr>
+    <td>超链接：</td>
+    <td><textarea cols="25" name="url">#</textarea></td>
+  </tr>
+  <tr>
+    <td align="right" colspan="2">
+    <input type="submit" value="添加" class="button button-primary" id="submit" name="submit" />
+    </td>
+  </tr></table></form>
+
+  
+	</div>
+</div>
+<div class="clear"></div>
+</div>
+
+</body>
+{include file="./footer.html"}

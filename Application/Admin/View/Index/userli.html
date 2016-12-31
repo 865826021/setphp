@@ -1,0 +1,39 @@
+{include file="./header.html"}
+<div class="main pubw">
+{include file="./sidebar.html"}
+<div class="right">
+	{include file="./nav.html"}
+	
+	<div class="content">
+<table>
+  <tr>
+  	<th>UID</th>
+  	<th>手机</th>
+	<th>昵称</th>
+	<th>电子邮箱</th>
+	<th>注册时间</th>
+	<th>最后登录IP</th>
+	<th>登录时间</th>
+</tr>
+{foreach from="$users" item="i"}
+  <tr>
+    <td>{$i.id}</td>
+    <td>{$i.phone}</td>
+    <td>{if $i.name}{$i.name}{else}无{/if}</td>
+    <td>{if $i.email}{$i.email}{else}无{/if}</td>
+    <td>{$i.register_time}</td>
+    <td>{if $i.login_ip}{$i.login_ip}{else}无{/if}</td>
+    <td>{if $i.login_time}{$i.login_time}{else}无{/if}</td>
+  </tr>
+  {/foreach}
+  </table>
+  {if $pageli} 
+<div class="pagination">{$pageli}                      	 
+</div>{/if}
+	</div>
+</div>
+<div class="clear"></div>
+</div>
+
+</body>
+{include file="./footer.html"}
